@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionViewID" id="gTV-IL-0wX" customClass="XMGCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="151" height="135"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="151" height="135"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="001" translatesAutoresizingMaskIntoConstraints="NO" id="k3h-RP-Tvn">
+                        <rect key="frame" x="0.0" y="0.0" width="151" height="87"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="87" id="ZSq-VE-Sm2"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6O-eQ-lMS">
+                        <rect key="frame" x="8" y="114" width="135" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="3dq-je-4hB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7v-12-56l">
+                        <rect key="frame" x="8" y="93" width="135" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="A5s-SJ-ti6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="T6O-eQ-lMS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="HyI-aq-3X7"/>
+                <constraint firstAttribute="trailing" secondItem="k3h-RP-Tvn" secondAttribute="trailing" id="Uqf-GG-3Ff"/>
+                <constraint firstAttribute="trailing" secondItem="X7v-12-56l" secondAttribute="trailing" constant="8" id="aAL-F1-bl7"/>
+                <constraint firstItem="k3h-RP-Tvn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bZI-yI-TIp"/>
+                <constraint firstItem="X7v-12-56l" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="c0M-TB-QuQ"/>
+                <constraint firstItem="X7v-12-56l" firstAttribute="top" secondItem="k3h-RP-Tvn" secondAttribute="bottom" constant="6" id="o1Y-Lq-j49"/>
+                <constraint firstAttribute="trailing" secondItem="T6O-eQ-lMS" secondAttribute="trailing" constant="8" id="usj-6e-jpu"/>
+                <constraint firstItem="k3h-RP-Tvn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wT2-HR-Ne0"/>
+                <constraint firstItem="T6O-eQ-lMS" firstAttribute="top" secondItem="X7v-12-56l" secondAttribute="bottom" constant="8" id="z9E-eq-QQh"/>
+            </constraints>
+            <size key="customSize" width="151" height="135"/>
+            <connections>
+                <outlet property="desLabel" destination="T6O-eQ-lMS" id="SwT-5z-TZz"/>
+                <outlet property="iconImageView" destination="k3h-RP-Tvn" id="AY5-q1-Eff"/>
+                <outlet property="nameLabel" destination="X7v-12-56l" id="595-MW-f5h"/>
+            </connections>
+            <point key="canvasLocation" x="498.5" y="294.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="001" width="1262" height="696"/>
+    </resources>
+</document>

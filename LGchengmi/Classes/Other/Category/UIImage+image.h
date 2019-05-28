@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UIImage+image.h
 //  LGchengmi
 //
 //  Created by 甘延娇 on 2019/5/28.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface UIImage (image)
 
++ (UIImage *)imageOriginalWithName:(NSString *)imageName;
 
 @end
-

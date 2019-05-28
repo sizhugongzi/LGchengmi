@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XMGLeftView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgImage" translatesAutoresizingMaskIntoConstraints="NO" id="QLF-kb-FXg">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPT-xi-1vN" customClass="XMGCityBtn">
+                    <rect key="frame" x="23" y="37" width="185" height="47"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="城市" image="city_down">
+                        <color key="titleColor" red="0.26978366030000001" green="1" blue="0.75248076480000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cityClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="hld-d4-5dV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzP-Lq-oXP" customClass="XMGMenuBtn">
+                    <rect key="frame" x="23" y="102" width="185" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="home"/>
+                    <state key="selected" image="homeSeletced"/>
+                    <connections>
+                        <action selector="menuClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="crk-Er-he9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7X-jl-BX3" customClass="XMGMenuBtn">
+                    <rect key="frame" x="23" y="173" width="185" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="found"/>
+                    <state key="selected" image="foundSelected"/>
+                    <connections>
+                        <action selector="menuClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="XFM-iw-1s2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2U-qk-hKH" customClass="XMGMenuBtn">
+                    <rect key="frame" x="23" y="249" width="185" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="unLogin"/>
+                    <state key="selected" image="unLogin"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2B-sb-deL" customClass="XMGMenuBtn">
+                    <rect key="frame" x="23" y="317" width="185" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="sina"/>
+                    <state key="selected" image="foundSelected"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kR2-Ie-FWK" customClass="XMGMenuBtn">
+                    <rect key="frame" x="23" y="379" width="185" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="weixin"/>
+                    <state key="selected" image="weixin"/>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ej4-NF-PmL" customClass="XMGMenuBtn">
+                    <rect key="frame" x="23" y="479" width="185" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="message"/>
+                    <state key="selected" image="messageSelected"/>
+                    <connections>
+                        <action selector="menuClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="u7A-5p-oaZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wru-aK-IwO" customClass="XMGMenuBtn">
+                    <rect key="frame" x="23" y="568" width="185" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="seting"/>
+                    <state key="selected" image="setingSelected"/>
+                    <connections>
+                        <action selector="menuClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="O2z-fT-Mgt"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blackLine" translatesAutoresizingMaskIntoConstraints="NO" id="Qah-1t-lIR">
+                    <rect key="frame" x="-5" y="227" width="240" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blackLine" translatesAutoresizingMaskIntoConstraints="NO" id="Gk9-AV-49z">
+                    <rect key="frame" x="-5" y="446" width="246" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="QLF-kb-FXg" secondAttribute="bottom" id="A6v-u1-wAT"/>
+                <constraint firstItem="QLF-kb-FXg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZdP-q0-yk3"/>
+                <constraint firstItem="QLF-kb-FXg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fal-Lu-lNp"/>
+                <constraint firstAttribute="trailing" secondItem="QLF-kb-FXg" secondAttribute="trailing" id="vZH-NU-tLH"/>
+            </constraints>
+            <connections>
+                <outlet property="cityBtn" destination="zPT-xi-1vN" id="FDF-bf-E3y"/>
+                <outlet property="preSelectBtn" destination="jzP-Lq-oXP" id="kex-eX-sdO"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="bgImage" width="194" height="186"/>
+        <image name="blackLine" width="258.5" height="24"/>
+        <image name="city_down" width="16" height="9"/>
+        <image name="found" width="185" height="54.5"/>
+        <image name="foundSelected" width="185" height="54.5"/>
+        <image name="home" width="185" height="54.5"/>
+        <image name="homeSeletced" width="185" height="54.5"/>
+        <image name="message" width="185" height="54.5"/>
+        <image name="messageSelected" width="185" height="54.5"/>
+        <image name="seting" width="185" height="54.5"/>
+        <image name="setingSelected" width="185" height="54.5"/>
+        <image name="sina" width="194" height="51.5"/>
+        <image name="unLogin" width="202.5" height="50"/>
+        <image name="weixin" width="194" height="51.5"/>
+    </resources>
+</document>

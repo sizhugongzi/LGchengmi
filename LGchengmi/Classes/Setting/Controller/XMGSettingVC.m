@@ -7,22 +7,18 @@
 //
 
 #import "XMGSettingVC.h"
-
-
 #import "XMGPushViewController.h"
 #import "XMGTestViewController.h"
 #import "XMGChooseVC.h"
 
-
 @interface XMGSettingVC ()
-
 
 @end
 
 @implementation XMGSettingVC
 
-
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     self.title = @"设置";
     
@@ -31,10 +27,7 @@
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
-    
     UIView *footV = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 44)];
-    
-    
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.backgroundColor = [UIColor blueColor];
     [btn setTitle:@"退出登录" forState:UIControlStateNormal];
@@ -46,12 +39,11 @@
     [footV addSubview:btn];
     
     self.tableView.tableFooterView = footV;
-    
 }
 
 //描述一组
-- (void)setUpGroup1 {
-    
+- (void)setUpGroup1
+{
     XMGArrowItem *row1 = [XMGArrowItem itemWithImage:[UIImage imageNamed:@"handShake"] title:@"个人中心"];
     
     //要跳转到的控制器
@@ -61,9 +53,6 @@
     row2.desClass = [XMGChooseVC class];
    
     XMGSwitchItem *row3 = [XMGSwitchItem itemWithImage:nil title:@"推送"];
-
-
-    
     //一组当中有多少行.
     NSArray *array = @[row1,row2,row3];
     
@@ -71,11 +60,11 @@
     groupItem.headerT = @"关联账号";
    
     [self.groupArray addObject:groupItem];
-
 }
 
 //描述一组
-- (void)setUpGroup2 {
+- (void)setUpGroup2
+{
     XMGArrowItem *row1 = [XMGArrowItem itemWithImage:nil title:@"反馈好评"];
     XMGArrowItem *row2 = [XMGArrowItem itemWithImage:nil title:@"清理缓存"];
     
@@ -83,11 +72,6 @@
     NSArray *array = @[row1,row2];
     XMGGroupItem *groupItem =  [XMGGroupItem itemWithRowItemArray:array];
     [self.groupArray addObject:groupItem];
-    
 }
-
-
-
-
 
 @end

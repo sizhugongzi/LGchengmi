@@ -26,7 +26,6 @@
 
 @implementation XMGDiscoveryVC
 
-
 - (NSArray *)discoveryArray
 {
     if (_discoveryArray == nil) {
@@ -55,7 +54,6 @@
     
     //设置辅助视图的宽高
     flowL.headerReferenceSize = CGSizeMake(kScreenW, 200);
-    
     
     return [super initWithCollectionViewLayout:flowL];
 }

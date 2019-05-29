@@ -19,7 +19,6 @@
     self.layer.cornerRadius = 8;
 }
 
-
 - (void)layoutSubviews
 {
     [super layoutSubviews];

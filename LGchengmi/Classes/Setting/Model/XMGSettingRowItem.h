@@ -19,8 +19,6 @@
 //子标题
 @property (nonatomic, strong) NSString *subTitle;
 
-
-
 + (instancetype)itemWithImage:(UIImage *)image title:(NSString *)title;
 
 @end

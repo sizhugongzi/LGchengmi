@@ -7,13 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
 #import "XMGSettingRowItem.h"
 #import "XMGGroupItem.h"
 #import "XMGArrowItem.h"
 #import "XMGSwitchItem.h"
 #import "XMGSettingCell.h"
-
 
 @interface XMGSettingBaseVC : UITableViewController
 

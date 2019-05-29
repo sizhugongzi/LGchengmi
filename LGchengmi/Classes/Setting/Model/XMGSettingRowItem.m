@@ -10,8 +10,8 @@
 
 @implementation XMGSettingRowItem
 
-+ (instancetype)itemWithImage:(UIImage *)image title:(NSString *)title {
-    
++ (instancetype)itemWithImage:(UIImage *)image title:(NSString *)title
+{
    XMGSettingRowItem *item  =  [[self alloc] init];
     item.image = image;
     item.title = title;

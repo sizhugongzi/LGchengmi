@@ -16,7 +16,8 @@
 
 @implementation XMGScoreVC
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
    
     //设置数据
@@ -32,8 +33,8 @@
 
 
 //描述一组
-- (void)setUpGroup1 {
-    
+- (void)setUpGroup1
+{
     XMGSwitchItem *row1 = [XMGSwitchItem itemWithImage:[UIImage imageNamed:@"handShake"] title:@"使用兑换码"];
     //一组当中有多少行.
     NSArray *array = @[row1];
@@ -42,8 +43,8 @@
 }
 
 //描述一组
-- (void)setUpGroup2 {
-    
+- (void)setUpGroup2
+{
     XMGArrowItem *row1 = [XMGArrowItem itemWithImage:[UIImage imageNamed:@"handShake"] title:@"使用兑换码"];
     row1.subTitle = @"23:00";
     
@@ -61,7 +62,6 @@
         UITableViewCell *cell = [weakSelf.tableView cellForRowAtIndexPath:indexPath];
         [cell addSubview:textF];
     
-    
     };
     //一组当中有多少行.
     NSArray *array = @[row1];
@@ -69,10 +69,9 @@
     [self.groupArray addObject:groupItem];
 }
 
-
 //展示什么内容
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     //1.创建Cell.
     XMGSettingCell *cell = [XMGSettingCell cellWithTableView:tableView style:UITableViewCellStyleValue1];
     //2.取出数据.
@@ -83,13 +82,9 @@
     return cell;
 }
 
-
-- (void)dealloc {
+- (void)dealloc
+{
     NSLog(@"%s",__func__);
 }
-
-
-
-
 
 @end

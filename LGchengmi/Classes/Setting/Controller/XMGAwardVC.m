@@ -14,18 +14,15 @@
 
 @implementation XMGAwardVC
 
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self setUpGroup1];
 }
 
-
 //描述一组
-- (void)setUpGroup1 {
-
+- (void)setUpGroup1
+{
     XMGSwitchItem *row1 = [XMGSwitchItem itemWithImage:[UIImage imageNamed:@"handShake"] title:@"使用兑换码"];
     row1.subTitle = @"每周,二,四,日开奖";
     XMGSwitchItem *row2 = [XMGSwitchItem itemWithImage:[UIImage imageNamed:@"handShake"] title:@"优惠"];
@@ -34,10 +31,6 @@
     NSArray *array = @[row1,row2];
     XMGGroupItem *groupItem =  [XMGGroupItem itemWithRowItemArray:array];
     [self.groupArray addObject:groupItem];
-    
 }
-
-
-
 
 @end

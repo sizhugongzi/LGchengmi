@@ -27,5 +27,4 @@
  */
 @property (nonatomic, copy) NSString *poi_name;
 
-
 @end

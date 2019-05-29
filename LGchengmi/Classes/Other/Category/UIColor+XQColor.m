@@ -13,8 +13,8 @@
 /**
  返回随机颜色
  */
-+ (instancetype)randColor {
-    
++ (instancetype)randColor
+{
     CGFloat r = arc4random_uniform(256) / 255.0f;
     CGFloat g = arc4random_uniform(256) / 255.0f;
     CGFloat b = arc4random_uniform(256) / 255.0f;
@@ -24,8 +24,8 @@
 /**
  *  将16进制字符串转换成UIColor
  */
-+ (UIColor *)colorWithHexString:(NSString *)color alpha:(CGFloat)alpha {
-    
++ (UIColor *)colorWithHexString:(NSString *)color alpha:(CGFloat)alpha
+{
     NSString *cString = [[color stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
     // String should be 6 or 8 characters
     if ([cString length] < 6)

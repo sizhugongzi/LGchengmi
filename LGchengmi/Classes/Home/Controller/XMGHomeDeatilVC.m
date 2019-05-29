@@ -46,5 +46,4 @@
     [self.shareView  hiddenShareView];
 }
 
-
 @end

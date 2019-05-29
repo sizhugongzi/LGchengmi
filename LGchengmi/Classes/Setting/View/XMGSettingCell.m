@@ -14,9 +14,8 @@
 @implementation XMGSettingCell
 
 
-+ (instancetype)cellWithTableView:(UITableView *)tableView style:(UITableViewCellStyle)style{
-    
-    
++ (instancetype)cellWithTableView:(UITableView *)tableView style:(UITableViewCellStyle)style
+{
     static NSString *ID = @"settingCell";
     
     XMGSettingCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
@@ -26,7 +25,6 @@
     }
     
     return cell;
-    
 }
 
 - (void)setRowItem:(XMGSettingRowItem *)rowItem {
@@ -35,25 +33,22 @@
     //1.设置数据
     [self setUpData:rowItem];
     
-    
     //2.设置辅助视图
     [self setCellAccessoryView:rowItem];
-    
 }
 
 //设置数据
-- (void)setUpData:(XMGSettingRowItem *)rowItem {
-    
+- (void)setUpData:(XMGSettingRowItem *)rowItem
+{
     //设置数据
     self.imageView.image = rowItem.image;
     self.textLabel.text = rowItem.title;
     self.detailTextLabel.text = rowItem.subTitle;
-    
 }
 
-
 //设置辅助视图
-- (void)setCellAccessoryView:(XMGSettingRowItem *)rowItem {
+- (void)setCellAccessoryView:(XMGSettingRowItem *)rowItem
+{
     //根据模型的类型,判断辅助视图的类型
     if ([rowItem isKindOfClass:[XMGArrowItem class]]) {
         

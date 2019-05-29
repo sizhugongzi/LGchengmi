@@ -17,7 +17,6 @@
 
 @end
 
-
 @implementation XMGCollectionViewCell
 
 - (void)awakeFromNib {
@@ -31,6 +30,5 @@
     self.iconImageView.image = [UIImage imageNamed:themeItem.img];
     self.nameLabel.text = themeItem.title;
     self.desLabel.text = themeItem.keywords;
-    
 }
 @end

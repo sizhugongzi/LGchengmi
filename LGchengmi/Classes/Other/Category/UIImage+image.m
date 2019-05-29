@@ -10,10 +10,10 @@
 
 @implementation UIImage (image)
 
-+ (UIImage *)imageOriginalWithName:(NSString *)imageName {
++ (UIImage *)imageOriginalWithName:(NSString *)imageName
+{
     UIImage *image = [UIImage imageNamed:imageName];
     image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
     return image;
 }
 

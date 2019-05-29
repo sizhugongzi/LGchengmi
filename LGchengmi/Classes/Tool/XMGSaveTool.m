@@ -10,7 +10,6 @@
 
 @implementation XMGSaveTool
 
-
 //存
 + (void)setObject:(id)value forKey:(NSString *)defaultName
 {

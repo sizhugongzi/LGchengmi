@@ -18,21 +18,22 @@
 @implementation XMGPushViewController
 
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
      self.title = @"推送提醒";
     
     [self setUpGroup1];
 }
-- (void)setUpGroup1 {
-    
+
+- (void)setUpGroup1
+{
     XMGArrowItem *row1 = [XMGArrowItem itemWithImage:[UIImage imageNamed:@"handShake"] title:@"开奖推送"];
     
     //要跳转到的控制器
     row1.desClass = [XMGAwardVC class];
     
     XMGSwitchItem *row2 = [XMGSwitchItem itemWithImage:[UIImage imageNamed:@"handShake"] title:@"比分直播"];
-    
     
     XMGArrowItem *row3 = [XMGArrowItem itemWithImage:[UIImage imageNamed:@"handShake"] title:@"比分直播1"];
     row3.desClass = [XMGScoreVC class];

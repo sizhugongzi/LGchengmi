@@ -104,7 +104,6 @@
     self.isOpen = !self.isOpen;
 }
 
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.cityArray.count;

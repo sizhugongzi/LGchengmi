@@ -21,7 +21,8 @@
 
 @implementation XMGHomeViewController
 
-- (NSArray *)dataArray {
+- (NSArray *)dataArray
+{
     
     if (_dataArray == nil) {
         _dataArray = [XMGSectionItem getSectionItemList];
@@ -43,7 +44,6 @@
 {
     //设置右侧的内容
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:notice.object style:0 target:nil action:nil];
-    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView

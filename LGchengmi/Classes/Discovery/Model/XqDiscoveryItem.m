@@ -22,5 +22,4 @@
     return  [XqDiscoveryItem mj_objectArrayWithFilename:@"message.plist"];
 }
 
-
 @end

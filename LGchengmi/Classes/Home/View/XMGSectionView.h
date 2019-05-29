@@ -16,5 +16,4 @@
 
 @property (nonatomic ,strong) XMGSectionItem *secItem;
 
-
 @end

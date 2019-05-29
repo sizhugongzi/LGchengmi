@@ -23,7 +23,6 @@
  *  每一组当中有多少行.放的都是行模型
  */
 @property (nonatomic, strong) NSArray *rowItemArray;
-
 + (instancetype)itemWithRowItemArray:(NSArray *)rowItemArray;
 
 @end

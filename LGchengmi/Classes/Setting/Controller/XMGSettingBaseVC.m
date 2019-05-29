@@ -8,45 +8,41 @@
 
 #import "XMGSettingBaseVC.h"
 
-
 @interface XMGSettingBaseVC ()
 
 @end
 
 @implementation XMGSettingBaseVC
 
-
-
-- (NSMutableArray *)groupArray {
-    
+- (NSMutableArray *)groupArray
+{
     if (_groupArray == nil) {
         _groupArray = [NSMutableArray array];
     }
     return _groupArray;
 }
 
-- (instancetype)init {
-    
+- (instancetype)init
+{
     return [super initWithStyle:UITableViewStyleGrouped];
 }
 
-
-
 #pragma -mark 数据源代理方法
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
     return self.groupArray.count;
 }
 
 //每一组有多少行
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     XMGGroupItem *groupItem = self.groupArray[section];
     return groupItem.rowItemArray.count;
 }
 
 //展示什么内容
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     //1.创建Cell.
     XMGSettingCell *cell = [XMGSettingCell cellWithTableView:tableView style:UITableViewCellStyleSubtitle];
     //2.取出数据.
@@ -57,10 +53,9 @@
     return cell;
 }
 
-
 //点击一行
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
     //取出行模型
     XMGGroupItem *groupItem = self.groupArray[indexPath.section];
     XMGSettingRowItem *rowItem = groupItem.rowItemArray[indexPath.row];
@@ -82,30 +77,18 @@
             //如果有,进行跳转
             [self.navigationController pushViewController:vc animated:YES];
         }
-        
     }
-    
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    
     //取出组
     XMGGroupItem *groupItem = self.groupArray[section];
     return groupItem.headerT;
-    
-    
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
     XMGGroupItem *groupItem = self.groupArray[section];
     return groupItem.footerT;
 }
-
-
-
-
-
-
-
 
 @end

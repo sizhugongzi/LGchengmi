@@ -14,23 +14,20 @@
 
 //记录当前点击的是哪一行
 @property (nonatomic,assign) NSInteger curRow;
-
 @property (nonatomic,assign) BOOL isOpen;
 
 @end
 
 @implementation XMGChooseVC
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
     self.curRow = -1;
-    
-
-    
 }
 
 

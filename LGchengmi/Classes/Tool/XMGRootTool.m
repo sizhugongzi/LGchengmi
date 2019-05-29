@@ -10,7 +10,6 @@
 #import "XMGSaveTool.h"
 #import "XMGMainViewController.h"
 #import "XMGNewFeatureVC.h"
-
 #define kVersion @"curVersion"
 
 @implementation XMGRootTool
@@ -32,10 +31,8 @@
     }else {
         //不同,进入到新特性
         XMGNewFeatureVC *newFeatureVC = [[XMGNewFeatureVC alloc] init];
-
         //保存当前的版本号
         [XMGSaveTool setObject:curV forKey:kVersion];
-        
         return newFeatureVC;
     }
 }

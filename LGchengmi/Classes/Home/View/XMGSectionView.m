@@ -33,7 +33,6 @@
     
     UIColor *bgColor = [UIColor colorWithHexString:secItem.color alpha:1];
     self.backgroundColor = bgColor;
-    
 }
 
 @end

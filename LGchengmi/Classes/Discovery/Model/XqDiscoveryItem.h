@@ -15,7 +15,6 @@
 //头部
 @property (nonatomic, strong) NSArray *themes;
 
-
 + (NSArray *)getDiscoveryList;
 
 

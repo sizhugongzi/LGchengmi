@@ -10,8 +10,8 @@
 
 @implementation XMGGroupItem
 
-+ (instancetype)itemWithRowItemArray:(NSArray *)rowItemArray {
-    
++ (instancetype)itemWithRowItemArray:(NSArray *)rowItemArray
+{
     XMGGroupItem *groupItem = [[self alloc] init];
     groupItem.rowItemArray = rowItemArray;
     return groupItem;

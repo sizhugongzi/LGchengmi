@@ -10,14 +10,9 @@
 
 @interface XMGRootTool : NSObject
 
-
 /**
  *  选择根控制器
  */
 + (UIViewController *)choosRootVC;
-
-/**
- *  注册第三方登录
- */
 
 @end

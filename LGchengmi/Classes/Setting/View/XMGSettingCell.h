@@ -11,10 +11,7 @@
 @class XMGSettingRowItem;
 @interface XMGSettingCell : UITableViewCell
 
-
 + (instancetype)cellWithTableView:(UITableView *)tableView style:(UITableViewCellStyle)style;
-
-
 @property (nonatomic, strong)XMGSettingRowItem *rowItem;
 
 @end

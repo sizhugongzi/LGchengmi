@@ -10,8 +10,6 @@
 
 @interface XMGSwitchItem : XMGSettingRowItem
 
-
 @property (nonatomic, assign) BOOL isChoose;
-
 
 @end

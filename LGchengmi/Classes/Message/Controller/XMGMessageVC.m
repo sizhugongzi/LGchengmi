@@ -56,7 +56,6 @@
     [segV addTarget:self action:@selector(change:) forControlEvents:UIControlEventValueChanged];
     
     self.navigationItem.titleView = segV;
-    
 }
 
 //UISegmentedControl改变时调用
